@@ -8,6 +8,7 @@ require (
 )
 
 require (
+	github.com/golang/protobuf v1.4.3 // indirect
 	github.com/labstack/gommon v0.3.1 // indirect
 	github.com/mattn/go-colorable v0.1.11 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
@@ -15,6 +16,8 @@ require (
 	github.com/valyala/fasttemplate v1.2.1 // indirect
 	golang.org/x/net v0.0.0-20210226172049-e18ecbb05110 // indirect
 	golang.org/x/sys v0.0.0-20211103235746-7861aae1554b // indirect
+	google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013 // indirect
+	google.golang.org/protobuf v1.25.0 // indirect
 )
 
 require (
@@ -31,4 +34,5 @@ require (
 	github.com/labstack/echo v3.3.10+incompatible
 	golang.org/x/crypto v0.0.0-20210921155107-089bfa567519 // indirect
 	golang.org/x/text v0.3.7 // indirect
+	google.golang.org/grpc v1.44.0
 )
