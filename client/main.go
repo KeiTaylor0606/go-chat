@@ -74,7 +74,8 @@ func sendMessage(c pb.HelloGrpcClient, id string, name string) error {
 		stdin.Scan()
 		text := stdin.Text()
 		// サーバへSendRequest型のメッセージを送信
-		if err := stream.Send(&pb.SendRequest{Id: id, Name: name, Content: text}); err != nil {
+		content := []byte(text)
+		if err := stream.Send(&pb.SendRequest{Id: id, Name: name, Content: string(content)}); err != nil {
 			log.Fatalf("Send failed: %v", err)
 		}
 		// /exitを入力すると終了
